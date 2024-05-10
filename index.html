@@ -1,2 +1,77 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="refresh" content="0;url=http://github.com/apperception-db/spatialyze" /></head></html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spatialyze</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+        width: 50%;
+    }
+    @media (max-width: 850px) {
+        .container {
+            margin-top: 50px;
+            width: 90%;
+        }
+        .logo {
+            width: 80%;
+        }
+        .precitation {
+            width: 100%;
+            overflow-x: scroll;
+        }
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        /* margin-bottom: 20px; */
+    }
+    .links a {
+        margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./spatialyze.png" alt="Spatialyze Logo" class="logo" />
+        <h2>A Geospatial Video Analytic System with Spatial-Aware Optimizations</h2>
+        <div class="links">
+            <a href="https://arxiv.org/abs/2308.03276" target="_blank">ArXiv</a>
+            <a href="https://github.com/apperception-db/spatialyze" target="_blank">GitHub</a>
+        </div>
+        <p align="justify">
+            Videos that are shot using commodity hardware such as phones and surveillance cameras record various metadata such as time and location.
+            We encounter such geospatial videos on a daily basis and such videos have been growing in volume significantly.
+            Yet, we do not have data management systems that allow users to interact with such data effectively.
+        </p>
+        <p align="justify">
+            In this paper, we describe Spatialyze, a new framework for end-to-end querying of geospatial videos.
+            Spatialyze comes with a domain-specific language where users can construct geospatial video analytic workflows using a 3-step, declarative, build-filter-observe paradigm.
+            Internally, Spatialyze leverages the declarative nature of such workflows, the temporal-spatial metadata stored with videos, and physical behavior of real-world objects to optimize the execution of workflows.
+            Our results using real-world videos and workflows show that Spatialyze can reduce execution time by up to 5.3x, while maintaining up to 97.1% accuracy compared to unoptimized execution.
+        </p>
+
+        <pre class="precitation"><code class="language-bib citation">@misc{kittivorawong2023spatialyze,
+    title={Spatialyze: A Geospatial Video Analytics System with Spatial-Aware Optimizations}, 
+    author={Chanwut Kittivorawong and Yongming Ge and Yousef Helal and Alvin Cheung},
+    year={2023},
+    eprint={2308.03276},
+    archivePrefix={arXiv},
+    primaryClass={cs.DB}
+}</code></pre>
+    </div>
+</body>
+</html>
