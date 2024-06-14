@@ -26,15 +26,15 @@
 
         pre.citation {
             overflow-x: scroll;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-bottom: 8px;
-            margin-top: 8px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 12px;
+            margin-top: 12px;
         }
 
         .citation-container {
             width: 100%;
-            background-color: rgb(236, 236, 236);
+            background-color: rgb(246, 248, 250);
             border-radius: 5px;
         }
 
@@ -43,7 +43,15 @@
             padding: 10px;
             white-space: pre-wrap;
             word-break: break-word; */
-            color: rgb(79, 79, 79);
+            color: rgb(21, 47, 101);
+        }
+
+        .bibtex-tag {
+            color: rgb(190, 53, 54);
+        }
+
+        .bibtex-name {
+            color: rgb(96, 60, 179);
         }
 
         @media (max-width: 850px) {
@@ -116,7 +124,7 @@
         </p>
 
         <div class="citation-container">
-            <pre class="citation"><code class="language-latex">@misc{kittivorawong2023spatialyze,
+            <pre class="citation"><code class="language-latex"><span class="bibtex-tag">@misc</span>{<span class="bibtex-name">kittivorawong2023spatialyze</span>,
     title={Spatialyze: A Geospatial Video Analytics System with Spatial-Aware Optimizations}, 
     author={Chanwut Kittivorawong and Yongming Ge and Yousef Helal and Alvin Cheung},
     year={2023},
